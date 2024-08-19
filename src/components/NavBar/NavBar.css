@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.SK-NavBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 85px;
+}
+.SK-NavBar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #3d3d3d;
+    transition: 0.3s ease-in-out;
+    padding: 0 35px;
+}
+nav ul li a:hover,
+nav ul li a:focus{
+    color: #f35525;
+}
+nav ul li a:hover::after{
+    content: '';
+    position: absolute;
+    background-color: #f35525;
+    bottom : -10px;
+    left: 35px;
+    width: 22px;
+    height: 3px;
+    transition: 0.3s ease;
+}
+.SK-BtnlistItem {
+    margin-right: 11px;
+}
+.SK-BtnlistItem .SK-Btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 40px;
+    background-color: #212121;
+    padding-right: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+.SK-BtnlistItem .SK-Btn .SK-NavIcon {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #f15627; 
+    padding: 11px;
+    margin-right: 10px;
+}
+.Bars-Icon{
+    display: none;
+    font-size: 30px;
+  }
+@media (max-width:992px){
+    .Bars-Icon {
+        display: block;
+        margin-top: 10px;
+    }
+    .SK-NavBar ul{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        transition: 1s;
+        bottom: 60px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: white;
+      }
+      .SK-NavBar ul.open{
+        width: 100%;
+      }
+      .SK-NavBar ul li{
+        margin-bottom: 80px !important;
+       }
+       .SK-BtnlistItem .SK-Btn {
+        display: none;
+       }
+}
+@media (max-width:460px) {
+      .SK-NavBar {
+        width: 100%;
+    }
+}
+

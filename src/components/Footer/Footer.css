@@ -1,0 +1,19 @@
+.SK-Footer {
+    width: 100%;
+    background-color: black;
+    bottom: 0px;
+    margin-top: 470px;   
+    padding: 10px 0;
+}
+
+.SK-Footer p {
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+@media (max-width:1044px){
+    .SK-Footer {
+        margin-top: 1200px;
+    }
+}

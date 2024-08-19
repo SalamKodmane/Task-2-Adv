@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.SK-TopNavBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 10px 85px;
+    border-bottom: 1px solid #efefef;
+}
+.SK-InfoContact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.Envelope-Icon, .Map-Icon {
+    color: #f35525;
+    width: 20px;
+    height: 20px;
+    padding-right: 12px;
+    transition: 0.3s ease-in-out;
+}
+.Envelope-Icon, .Map-Icon:hover,
+.Envelope-Icon, .Map-Icon:focus{
+    color: #f35525;
+}
+.SK-InfoContact .SK-Email {
+    margin-right: 50px;
+}
+.SK-InfoContact span {
+    color: #a9a1a1;
+    font-size: 14px;
+}
+.SK-Contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.SK-Contact li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #cdcdcd;
+    margin-right: 10px;
+}
+.SK-Contact .SK-Contact-Icon {
+    color: #ffffff;
+    font-size: 15px;
+}
+.SK-Contact .SK-Contact-Icon:hover,
+.SK-Contact .SK-Contact-Icon:focus{
+    color: #f35525;
+}
+@media (max-width:992px) {
+    .SK-TopNavBar {
+        display: none;
+    }
+
+}
+
+
+
+

@@ -1,0 +1,144 @@
+.SK-FeaturedSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 150px 170px 0 170px;
+}
+.SK-FeaturedImg {
+    position: relative;
+    display: flex;
+    width: 250px;
+}
+.SK-FeaturedIcon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: #f35525;
+    bottom: -7%;
+    left: -10%;
+}
+.SK-FeaturedIcon img {
+    width: 40px;
+}
+.SK-FeaturedTitle{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+.FEATURED-title {
+    width: 220px;
+}
+.FEATURED-title p {
+    position: absolute;
+    color: #f44336;
+    padding-left: 5px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+.FEATURED-title p::before {
+    position: absolute;
+    content: " ";
+    width: 3px;
+    height: 17px;
+    left: 0;
+    top: 15%;
+    background-color: #f44336;
+}
+.FEATURED-title h2 {
+    margin-top: 50px;
+    font-weight: 700;
+}
+.SK-Questions {
+    width: 400px;
+    background-color: #fafafa;
+    border-radius: 20px;
+    margin: 220px 0 0 25px;
+    padding: 10px;
+}
+.SK-Questions .Question1 {
+    color: #f35525;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding-bottom: 10px;
+}
+.Answer-span {
+    color: #4991fc;
+}
+.Question2 {
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding-bottom: 10px;
+}
+.SK-FeaturedCard {
+    width: 250px;
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px 40px;
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.SK-FeaturedCard-Content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding: 35px 0;
+    flex-wrap: wrap;
+}
+.SK-FeaturedCard-Content:last-child{
+    border-bottom: 0px;
+}
+.SK-FeaturedDetails {
+    padding-left: 40px;
+}
+.SK-FeaturedDetails p {
+    color: rgb(179, 179, 179);
+}
+.SK-FeaturedCardImg {
+    display: flex;
+    flex-direction: column;
+}
+.SK-FeaturedCardImg p {
+    margin-top: 7px;
+    color: rgb(179, 179, 179);
+}
+
+@media (min-width:700px) and (max-width:1150px){
+    .SK-FeaturedSection{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .FEATURED-title {
+        width: 400px;
+        margin: 100px 0;
+    }
+}
+@media (min-width:300px) and (max-width:700px){
+    .SK-FeaturedSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .FEATURED-title {
+        width: 250px;
+        margin: 50px 0 10px 0;
+    }
+    .SK-FeaturedImg {
+        width: 200px;
+    }
+    .SK-FeaturedIcon {
+        left: -10px;
+    }
+    .SK-FeaturedCard {
+        width: 230px;
+    }
+}  

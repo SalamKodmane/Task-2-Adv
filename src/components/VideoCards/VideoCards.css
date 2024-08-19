@@ -1,0 +1,56 @@
+.SK-VideoCards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 250px;
+    padding: 0 150px;
+}
+.SK-VideoCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+    position: relative;
+    background-color: #ffe1df;
+    padding: 20px 40px;
+    color: #f35525;
+    border-radius: 10px;
+}
+.SK-VideoCard::before {
+    content: " ";
+    position: absolute;
+    background-color: #f35525;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    right: -30px;
+    bottom: 80px;
+}
+.SK-VideoCard b {
+    color: #f35525;
+    font-weight: 700;
+    font-size: 40px;
+}
+.SK-VideoCard p {
+    width: 128px;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+@media  (max-width:500px){
+    .SK-VideoCard {
+        width: 220px;
+        padding: 10px;
+    }
+}
+@media (min-width:300px) and (max-width:1028px) {
+    .SK-VideoCard {
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
